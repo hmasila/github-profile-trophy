@@ -111,8 +111,8 @@ export class GithubAPIClient {
     username: string,
   ) {
     const tokens = [
-      process.env.get("PAT_1"),
-      process.env.get("PAT_2"),
+      process.env.PAT_1,
+      process.env.PAT_2,
     ];
     const variables = { username: username };
     let response;
