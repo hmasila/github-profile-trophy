@@ -111,8 +111,8 @@ export class GithubAPIClient {
     username: string,
   ) {
     const tokens = [
-      Deno.env.get("GITHUB_TOKEN1"),
-      Deno.env.get("GITHUB_TOKEN2"),
+      process.env.get("PAT_1"),
+      process.env.get("PAT_2"),
     ];
     const variables = { username: username };
     let response;
